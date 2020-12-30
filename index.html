@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NewYear</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+        html,
+        body {
+            margin: 0 auto;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        h1{
+            font-size:50px;
+        }
+        .my-container{
+            height:600px;
+            background-attachment: fixed;
+            background-repeat: no-repeat;
+        }
+
+        .my-container2{
+            background-image: url('dfafasfasdasda.jpg');
+            height:600px;
+            width:100%;
+            background-attachment: fixed;
+            background-color: violet;
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+
+        #img{
+            border-radius:10px;
+            box-shadow: 0px 8px 12px 0px rgba(0,0,0,0.3);
+            filter: saturate(1.5);
+        }
+        #content{
+            overflow:hidden;
+            height:auto;
+        }
+        #prime{
+            box-shadow: 0px 8px 12px 0px rgba(0,0,0,0.3);
+        }
+
+        @media screen and (max-width: 500px) {
+            .my-container, .my-container2 {
+                width: 100%;
+                height:300px;
+            }
+            .my-container2{
+            background-image: url('/cryu.jpg');
+            height:200px;
+            background-attachment: fixed;
+            background-repeat: no-repeat;
+            background-color: violet;
+            }
+            .col img{
+                height:200px;
+                width:300px;
+            }
+            #img{
+                animation: fadeIn ease-in-out 2s;
+                -webkit-animation: fadeIn ease-in-out 2s;
+                -moz-animation: fadeIn ease-in-out 2s;
+                -o-animation: fadeIn ease-in-out 2s;
+                -ms-animation: fadeIn ease-in-out 2s;
+            }
+            @keyframes fadeIn {
+                0% {opacity:0;}
+                100% {opacity:1;}
+            }
+
+            #text-section{
+                animation: fadeIn ease-in-out 2s;
+                -webkit-animation: fadeIn ease-in-out 2s;
+                -moz-animation: fadeIn ease-in-out 2s;
+                -o-animation: fadeIn ease-in-out 2s;
+                -ms-animation: fadeIn ease-in-out 2s;
+            }
+        }
+        #text-section{
+            padding:10px;
+        }
+        #content{
+            height:auto;
+        }
+        @media screen and (min-width: 400px){
+            .col img{
+                height:200px;
+                width:300px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+    <div class="my-container">
+        <img src="happy1.gif" height="100%" width="100%" id="prime">
+    </div>
+    <div class="container bg-dark">
+        <br>
+        <br>
+        <div class="row justify-content-center bg-dark">
+            <div class="col text-center">
+                <img src="kartik.jpg" height="100%" width="100%" id="img">
+            </div>  
+        </div>
+        <br><br>
+        <div class="row justify-content-center">
+            <div class="col col-md-6 bg-dark">
+                    <p class="display-4 text-center text-light" id="text-section"><span style="color:red;font-weight:bold;font-family:sans-serif;">&quot;</span>IN THIS <span style="color:yellow;font-weight:bold;">NEW YEAR 2021</span>, <span style="font-weight:bold;">I</span> WISH YOU ACHIEVE ALL <span style="font-weight:bold;">GOALS</span> IN YOUR LIFE AND GET <span style="font-weight: bold;">SUCCESS</span> AT EVERY STEP OF YOUR JOURNY!<span style="color:red;font-weight:bold;font-family:sans-serif;">&quot;</span></h1>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
